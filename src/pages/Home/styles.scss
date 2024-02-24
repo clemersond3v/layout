@@ -22,10 +22,14 @@
                 background-repeat: no-repeat;
                 z-index: 9;
                 background-size: contain;
+
+                svg {
+                    width: 15px;
+                    height: 23px;
+                }
             }
             &-prev {
                 left: 128px;
-                background-image: url('../../assets/_icon-prev.svg');
 
                 &::before {
                     display: none;
@@ -33,7 +37,7 @@
             }
             &-next {
                 right: 128px;
-                background-image: url('../../assets/_icon-next.svg');
+
                 &::before {
                     display: none;
                 }
