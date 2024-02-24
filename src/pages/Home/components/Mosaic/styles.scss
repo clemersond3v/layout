@@ -1,0 +1,43 @@
+.mosaic {
+    margin-top: 80px;
+
+    &-container {
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        width: 85.9rem;
+        gap: 64px;
+
+        @media(max-width: 1375px) {
+            width: 90%;
+        }
+
+        &-textual {
+            width: 420px;
+
+            &--title {
+                font-family: "Titillium Web", sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                color: #000000;
+                line-height: 36.5px;
+                margin-bottom: 16px;
+            }
+
+            &--paragraph {
+                font-family: "Titillium Web", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                color: #000000;
+                line-height: 21.29px;
+            }
+        }
+
+        &-banner {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

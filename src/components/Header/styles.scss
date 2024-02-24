@@ -1,0 +1,165 @@
+.store-header {
+    &__subHeader {
+        background-color: #353535;
+        text-align: center;
+        height: 24px;
+        padding: 3px 0;
+        
+
+        p {
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }   
+    
+    &__main {        
+        box-shadow: 0px 4px 6px 0px #00000014;
+
+        &-container {
+            display: flex;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 0 8.5%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-logo {
+            height: 88px;
+        }
+
+        &-searchBar {
+            width: 50%;
+            position: relative;
+
+            &__input {
+                width: 100%;
+                background-color: #EFEFEF;
+                border: none;
+                border-radius: 10px;
+                height: 40px;
+                padding: 0 24px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #353535;
+
+                &::placeholder {
+                    color: #353535;
+                }
+            }   
+            
+            &__btn {
+                width: 119px;
+                height: 40px;
+                border-radius: 8px;
+                background-color: #FAA500;
+                color: #FFFFFF;
+                border: none;
+                font-family: "Titillium Web", sans-serif;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        &-navegateLinks {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: flex-end;
+
+            &--myaccount {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #353535;
+                }
+            }
+            &--wishList {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #353535;
+                }
+            }
+            &--miniCart {
+                display: flex;
+                align-items: center;
+                padding: 12px 17px;
+                gap: 8px;
+                cursor: pointer;
+
+                border: 1px solid #FAA500;
+                border-radius: 8px;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #353535;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        &-container {
+            &--list {
+                display: flex;
+                list-style: none;
+                gap: 3px;
+                align-items: center;
+                justify-content: center;
+                height: 48px;
+
+                &-item {
+                    width: 146px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &__icon {
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    &.novidades {
+                        a {
+                            color: #FAA500;
+                            font-weight: 700;
+                        }                        
+                    }
+
+                    a {
+                        font-family: "Titillium Web", sans-serif;
+                        color: #353535;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
