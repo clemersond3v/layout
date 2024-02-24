@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/layout/static/css/main.37e2d832.css",
+    "main.js": "/layout/static/js/main.df46290c.js",
+    "static/media/main-banner.png": "/layout/static/media/main-banner.952e09cce1f63f1abfd6.png",
+    "static/media/mosaic-banner.png": "/layout/static/media/mosaic-banner.c59ba00767fea82b9b0e.png",
+    "static/media/productImage01.png": "/layout/static/media/productImage01.773de2b96bcf382456c9.png",
+    "static/media/productImage02.png": "/layout/static/media/productImage02.4d479b30c010a0f5dfec.png",
+    "static/media/exchanges.svg": "/layout/static/media/exchanges.49e80f801f8910968e6dabd9839b6a90.svg",
+    "static/media/importProducts.svg": "/layout/static/media/importProducts.85d44122945b056de6d629d83866bccd.svg",
+    "static/media/discountOff.svg": "/layout/static/media/discountOff.dbb5ae00f79267cc6ddfd7a80bc86191.svg",
+    "static/media/deliveryFree.svg": "/layout/static/media/deliveryFree.29af8565c572ce4fb6d7b8a0b84b846f.svg",
+    "static/media/brandZara.svg": "/layout/static/media/brandZara.09bfc90456af7ea101852139a8ec7bbd.svg",
+    "static/media/brandMelissa.svg": "/layout/static/media/brandMelissa.49467e7b1d57aafdeddf0b6606c2015b.svg",
+    "static/media/brandForever21.svg": "/layout/static/media/brandForever21.b372c1d1129b9f34b83de59bdf31c642.svg",
+    "static/media/brandAnnTaylor.svg": "/layout/static/media/brandAnnTaylor.8186dd812c339d2c90105eefab274e47.svg",
+    "static/media/stock.svg": "/layout/static/media/stock.6c70491f8d6ba5af46f8048a40ed95ce.svg",
+    "static/media/brandComma.svg": "/layout/static/media/brandComma.206c7dc7396bf636c9dc3b6b584950a0.svg",
+    "index.html": "/layout/index.html",
+    "static/media/_icon-next.svg": "/layout/static/media/_icon-next.83e7ad7f89ca4b4de450.svg",
+    "static/media/_icon-prev.svg": "/layout/static/media/_icon-prev.0bd951a23fb07a13713b.svg",
+    "main.37e2d832.css.map": "/layout/static/css/main.37e2d832.css.map",
+    "main.df46290c.js.map": "/layout/static/js/main.df46290c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37e2d832.css",
+    "static/js/main.df46290c.js"
+  ]
+}
