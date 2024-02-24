@@ -1,0 +1,66 @@
+.benefitsBar {
+    margin-top: 15px;
+
+    &--title {
+        text-align: center;        
+        margin-bottom: 16px;
+
+        p {
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24.34px;
+            color: #353535;
+        }
+    }
+
+    &-container {
+        display: flex;
+        max-width: 1920px;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 15px;
+
+        @media(max-width: 1375px) {
+            gap: 10px;
+        }
+
+        &--item {
+            max-width: 308px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+
+            background-color: #EFEFEF;
+            padding: 11px 27px;
+
+            @media(max-width: 1375px) {
+                gap: 15px;
+            }
+
+            &__icon {
+                width: 32px;
+                height: 32px;
+            }
+
+            &__content {
+                &-text {
+                    font-family: "Titillium Web", sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 21.29px;
+                    color: #353535;
+                }
+
+                &-subText {
+                    font-family: "Titillium Web", sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18.25px;
+                    color: #353535;
+                }
+            }
+        }
+    }
+}

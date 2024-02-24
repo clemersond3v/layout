@@ -1,0 +1,170 @@
+.store-footer {
+    margin-top: 80px;
+
+    &-container {
+        &--newsletter{
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            border-top: 1px solid #EFEFEF;
+            border-bottom: 1px solid #EFEFEF;
+
+            &__title {
+                font-family: "Titillium Web", sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36.5px;
+                color: #000000;
+            }
+
+            &__form {
+                form {
+                    position: relative;
+
+                    input {
+                        width: 630px;
+                        height: 40px;
+                        border-radius: 4px;
+                        border: 1px solid #353535;
+                        padding: 0 24px;
+                        font-size: 14px;
+                        color: #353535;
+
+                        &::placeholder {
+                            color: #353535;
+                        }
+                    }
+
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+
+                        width: 131px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background-color: #FAA500;
+                        border: 1px solid #FAA500;
+
+                        color: #ffffff;
+                        font-family: "Titillium Web", sans-serif;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24.34px;
+                    }
+                }
+            }
+        }
+
+        &--links {
+            &-container {
+                max-width: 1920px;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin: 0 auto;
+                width: 58.4rem;
+                height: 291px;
+                padding-top: 40px;
+            }
+
+            &__list {
+                list-style: none;
+
+                &-item {
+                    &:not(:last-child) {
+                        margin-bottom: 5px;
+                    }
+
+                    a {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #000000;
+                        text-decoration: none;
+                    }
+
+                    &.title {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        &--baseboard {
+            background-color: #353535;
+
+            &-container {                
+                max-width: 1920px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                width: 85.9rem;
+                height: 85px;
+
+                @media(max-width: 1375px) {
+                    width: 90%;
+                }
+            }
+
+            &__socialMedias {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 22px;
+
+                &-item {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            &__paymentMethods {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            &__developedBy {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 22px;
+
+                &-item {
+                    a {
+                        text-decoration: none;
+                        p {
+                            font-family: "Open Sans", sans-serif;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 13.62px;
+                            color: #ffffff;
+                            margin-bottom: 3px;
+                        }
+
+                        img {
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

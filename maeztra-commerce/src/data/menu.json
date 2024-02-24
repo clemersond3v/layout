@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "linkName": "Novidades",
+        "menuClass": "novidades",
+        "href": "/novidades",
+        "icon": ""
+    },
+    {
+        "id": 2,
+        "linkName": "Vestidos",
+        "menuClass": "vestidos",
+        "href": "/vestidos",
+        "icon": ""
+    },
+    {
+        "id": 3,
+        "linkName": "Roupas",
+        "menuClass": "roupas",
+        "href": "/roupas",
+        "icon": ""
+    },
+    {
+        "id": 4,
+        "linkName": "Sapatos",
+        "menuClass": "sapatos",
+        "href": "/sapatos",
+        "icon": ""
+    },
+    {
+        "id": 5,
+        "linkName": "Lingerie",
+        "menuClass": "lingerie",
+        "href": "/lingerie",
+        "icon": ""
+    },
+    {
+        "id": 6,
+        "linkName": "Acessórios",
+        "menuClass": "acessorios",
+        "href": "/acessorios",
+        "icon": ""
+    },
+    {
+        "id": 7,
+        "linkName": "OUTLET",
+        "menuClass": "outlet",
+        "href": "/outlet",
+        "icon": ""
+    }
+]
