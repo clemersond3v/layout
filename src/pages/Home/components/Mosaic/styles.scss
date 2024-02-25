@@ -13,8 +13,17 @@
             width: 90%;
         }
 
+        @media(max-width: 1024px) {
+            flex-direction: column;
+            gap: 24px;
+        }
+
         &-textual {
             width: 420px;
+
+            @media(max-width: 1024px) {
+                width: 298px;
+            }
 
             &--title {
                 font-family: "Titillium Web", sans-serif;

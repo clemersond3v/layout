@@ -23,6 +23,10 @@
                 z-index: 9;
                 background-size: contain;
 
+                @media(max-width: 1024px) {
+                    width: 25px;
+                }
+
                 svg {
                     width: 15px;
                     height: 23px;
@@ -31,12 +35,24 @@
             &-prev {
                 left: 128px;
 
+                @media(max-width: 1024px) {
+                    display: flex !important;
+                    left: 23px;
+                    justify-content: flex-start;
+                }
+
                 &::before {
                     display: none;
                 }
             }
             &-next {
                 right: 128px;
+
+                @media(max-width: 1024px) {
+                    display: flex !important;
+                    right: 23px;
+                    justify-content: flex-end;
+                }
 
                 &::before {
                     display: none;
@@ -46,6 +62,10 @@
             &-dots {
                 bottom: 20px;
 
+                @media(max-width: 1024px) {
+                    bottom: 13px;
+                }
+
                 li {
                     button {
                         width: 16px;
@@ -53,6 +73,11 @@
                         border: 1px solid #FAA500;
                         background-color: transparent;
                         border-radius: 30px;
+
+                        @media(max-width: 1024px) {
+                            width: 8px;
+                            height: 8px;
+                        }
 
                         &::before {
                             display: none;

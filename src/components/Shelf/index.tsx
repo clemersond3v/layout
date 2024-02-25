@@ -45,20 +45,24 @@ const Shelf = (): JSX.Element => {
                         autoplay={false}
                         nextArrow={<NextArrowIcon />}
                         prevArrow={<PrevArrowIcon />}
+                        centerMode={false}
                         responsive={[
                             {
-                            breakpoint: 1375,
-                            settings: {
-                                slidesToShow: 4,
-                                slidesToScroll: 1,
-                            },
+                                breakpoint: 1375,
+                                settings: {
+                                    slidesToShow: 4,
+                                    slidesToScroll: 1,
+                                },
                             },
                             {
                             breakpoint: 600,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                            },
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    centerMode: true,
+                                    arrows: false,
+                                    centerPadding: '30px'
+                                },
                             },
                         ]}
                     >
@@ -91,8 +95,7 @@ const Shelf = (): JSX.Element => {
                                 </div>
                             </div>
                         ))}
-                    </Slider>
-                    
+                    </Slider>                    
                 </div>
             </div>
         </div>

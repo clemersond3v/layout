@@ -11,6 +11,10 @@
             font-size: 12px;
             font-weight: 400;
             line-height: 18px;
+
+            @media(max-width: 768px) {
+                font-size: 10px;
+            }
         }
     }   
     
@@ -24,15 +28,44 @@
             padding: 0 8.5%;
             align-items: center;
             justify-content: space-between;
+
+            @media(max-width: 1024px) {
+                height: 88px;
+                display: grid;
+                justify-content: unset;
+                grid-template-columns: 14% 58% 28%;
+            }            
+
+            @media(max-width: 768px) {
+                padding: 0 4.5%;
+            }
+        }
+
+        &-hamburgerBtn {
+            @media(min-width: 1025px) {
+                display: none;
+            }
+
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
         }
 
         &-logo {
             height: 88px;
+
+            @media(max-width: 1024px) {
+                height: unset;
+            }
         }
 
         &-searchBar {
             width: 50%;
             position: relative;
+
+            @media(max-width: 1025px) {
+                display: none;
+            }
 
             &__input {
                 width: 100%;
@@ -73,11 +106,19 @@
             gap: 30px;
             justify-content: flex-end;
 
+            @media(max-width: 1024px) {
+                gap: 31px;
+            }
+
             &--myaccount {
                 display: flex;
                 align-items: center;
                 gap: 8px;
                 cursor: pointer;
+
+                @media(max-width: 1025px) {
+                    display: none;
+                }
 
                 span {
                     font-size: 14px;
@@ -92,6 +133,10 @@
                 gap: 8px;
                 cursor: pointer;
 
+                @media(max-width: 1025px) {
+                    display: none;
+                }
+
                 span {
                     font-size: 14px;
                     font-weight: 400;
@@ -99,6 +144,16 @@
                     color: #353535;
                 }
             }
+
+            &--searchButtonMobile {
+                @media(min-width: 1025px) {
+                    display: none;
+                }
+
+                width: 32px;
+                height: 32px;
+            }
+
             &--miniCart {
                 display: flex;
                 align-items: center;
@@ -109,17 +164,38 @@
                 border: 1px solid #FAA500;
                 border-radius: 8px;
 
+                @media(max-width: 1024px) {
+                    padding: 0;
+                    gap: 0;
+                    border: none;
+                }
+
+                svg {
+                    @media(max-width: 1024px) {
+                        width: 31px;
+                        height: 25px;
+                    }
+                }
+
                 span {
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 21px;
                     color: #353535;
+
+                    @media(max-width: 1024px) {
+                        display: none;
+                    }
                 }
             }
         }
     }
 
     &__menu {
+        @media(max-width: 1025px) {
+            display: none;
+        }
+
         &-container {
             &--list {
                 display: flex;
