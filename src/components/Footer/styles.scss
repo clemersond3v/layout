@@ -11,6 +11,12 @@
             border-top: 1px solid #EFEFEF;
             border-bottom: 1px solid #EFEFEF;
 
+            @media(max-width: 1024px) {
+                flex-direction: column;
+                gap: 8px;
+                background-color: #FAFAFA;
+            }
+
             &__title {
                 font-family: "Titillium Web", sans-serif;
                 font-size: 24px;
@@ -23,6 +29,12 @@
                 form {
                     position: relative;
 
+                    @media(max-width: 1024px) {
+                        display: flex;
+                        gap: 15px;
+                        justify-content: center;
+                    }
+
                     input {
                         width: 630px;
                         height: 40px;
@@ -31,6 +43,11 @@
                         padding: 0 24px;
                         font-size: 14px;
                         color: #353535;
+
+                        @media(max-width: 1024px) {
+                            width: 65%;
+                            height: 26px;
+                        }
 
                         &::placeholder {
                             color: #353535;
@@ -53,6 +70,12 @@
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 24.34px;
+
+                        @media(max-width: 1024px) {
+                            position: sticky;
+                            width: 79px;
+                            height: 26px;
+                        }
                     }
                 }
             }
@@ -68,10 +91,25 @@
                 width: 58.4rem;
                 height: 291px;
                 padding-top: 40px;
+
+                @media(max-width: 1024px) {
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: flex-start;
+                    padding: 37px 30px 56px;
+                    height: auto;
+                    gap: 16px;
+                }
             }
 
             &__list {
                 list-style: none;
+
+                @media(max-width: 1024px) {
+                    height: 19px;
+                    overflow: hidden;
+                    width: 100%;
+                }
 
                 &-item {
                     &:not(:last-child) {
@@ -92,7 +130,23 @@
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 18px;
-                        color: #000000;
+                        color: #000000;                        
+
+                        @media(max-width: 1024px) {
+                            display: flex;
+                            width: 98%;
+                            justify-content: space-between;
+
+                            &::after {
+                                content: "+";
+                            }
+
+                            &.opened {
+                                &::after {
+                                    content: "-";
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -112,6 +166,14 @@
 
                 @media(max-width: 1375px) {
                     width: 90%;
+                }
+
+                @media(max-width: 1024px) {
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+                    gap: 32px;
+                    padding: 24px 0 32px;
                 }
             }
 
