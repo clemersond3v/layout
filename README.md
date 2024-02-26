@@ -1,6 +1,14 @@
+## Description
+
+Home of an e-commerce developed for the selection process.
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+installs the necessary dependencies to run the project.
 
 ### `npm start`
 
@@ -18,8 +26,18 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-## Descrição
+In this project, the "REACT JS" framework was used, the "SCSS" css preprocessor was used. Some data files in "JSON" format were also implemented to simulate the consumption of VTEX information.
 
-Home de um e-commerce desenvolvida para processo seletivo.
+## Components
+
+### Pop-up
+
+I used the "react-modal" library to implement the popup. Only to optimize development time, as it is a very simple pop-up.
+
+Pop-up viewing is being controlled by the "@newsletterPopUpShown" cookie written to localStorage. To see it again after clicking the "close" button, clear the cookie.
+
+### Sliders
+
+To implement the sliders, I used the "react-slick" library, which works exactly the same as the "slick-slider" library in "jquery".
