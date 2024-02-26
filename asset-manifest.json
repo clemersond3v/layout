@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/layout/static/css/main.57809e3e.css",
-    "main.js": "/layout/static/js/main.62594b82.js",
+    "main.css": "/layout/static/css/main.10d396c6.css",
+    "main.js": "/layout/static/js/main.e4d36fdd.js",
     "static/media/main-banner.png": "/layout/static/media/main-banner.952e09cce1f63f1abfd6.png",
     "static/media/mosaic-banner.png": "/layout/static/media/mosaic-banner.c59ba00767fea82b9b0e.png",
-    "static/media/main-banner-mobile.png": "/layout/static/media/main-banner-mobile.f410a5b65c4e05d9be63.png",
+    "static/media/newsletter-modal-image.png": "/layout/static/media/newsletter-modal-image.464d77599a3255325bb2.png",
     "static/media/productImage01.png": "/layout/static/media/productImage01.773de2b96bcf382456c9.png",
     "static/media/productImage02.png": "/layout/static/media/productImage02.4d479b30c010a0f5dfec.png",
     "static/media/mosaic-banner-mobile.png": "/layout/static/media/mosaic-banner-mobile.3b0daff735b903dc9c09.png",
+    "static/media/main-banner-mobile.png": "/layout/static/media/main-banner-mobile.b3bf0b72e6f32352a59d.png",
     "static/media/exchanges.svg": "/layout/static/media/exchanges.49e80f801f8910968e6dabd9839b6a90.svg",
     "static/media/importProducts.svg": "/layout/static/media/importProducts.85d44122945b056de6d629d83866bccd.svg",
     "static/media/discountOff.svg": "/layout/static/media/discountOff.dbb5ae00f79267cc6ddfd7a80bc86191.svg",
@@ -19,11 +20,11 @@
     "static/media/stock.svg": "/layout/static/media/stock.6c70491f8d6ba5af46f8048a40ed95ce.svg",
     "static/media/brandComma.svg": "/layout/static/media/brandComma.206c7dc7396bf636c9dc3b6b584950a0.svg",
     "index.html": "/layout/index.html",
-    "main.57809e3e.css.map": "/layout/static/css/main.57809e3e.css.map",
-    "main.62594b82.js.map": "/layout/static/js/main.62594b82.js.map"
+    "main.10d396c6.css.map": "/layout/static/css/main.10d396c6.css.map",
+    "main.e4d36fdd.js.map": "/layout/static/js/main.e4d36fdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.57809e3e.css",
-    "static/js/main.62594b82.js"
+    "static/css/main.10d396c6.css",
+    "static/js/main.e4d36fdd.js"
   ]
 }
