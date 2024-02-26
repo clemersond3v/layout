@@ -1,4 +1,3 @@
-import React from 'react';
 import mainBanners from "../../data/mainBanners.json"
 import BenefitsBar from "./components/BenefitsBar"
 import BrandsBar from "./components/BrandsBar"

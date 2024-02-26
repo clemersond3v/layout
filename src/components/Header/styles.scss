@@ -63,6 +63,10 @@
             width: 50%;
             position: relative;
 
+            @media(max-width: 1190px) {
+                width: 40%;
+            }
+
             @media(max-width: 1025px) {
                 display: none;
             }
@@ -106,6 +110,9 @@
             gap: 30px;
             justify-content: flex-end;
 
+            @media(max-width: 1260px) {
+                gap: 15px;
+            }
             @media(max-width: 1024px) {
                 gap: 31px;
             }
