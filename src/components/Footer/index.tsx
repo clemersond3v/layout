@@ -1,8 +1,24 @@
 import './styles.scss'
 import vtexIcon from '../../assets/poweredBy-vtex.png'
 import maeztraIcon from '../../assets/developedby-maeztra.png'
+import { useCallback, useState } from 'react';
 
 const Footer = (): JSX.Element => {
+  const [isOpenInfos, setIsOpenInfos] = useState<boolean>(false);
+  const [isOpenMyAccount, setIsOpenMyAccount] = useState<boolean>(false);
+  const [isOpenStore, setIsOpenStore] = useState<boolean>(false);
+
+  const handleOpenInfos = useCallback(() => {
+    setIsOpenInfos(!isOpenInfos);
+  }, [isOpenInfos]);
+
+  const handleOpenMyAccount = useCallback(() => {
+    setIsOpenMyAccount(!isOpenMyAccount);
+  }, [isOpenMyAccount]);
+
+  const handleOpenStore = useCallback(() => {
+    setIsOpenStore(!isOpenStore);
+  }, [isOpenStore]);
 
   return (
     <footer className='store-footer'>
@@ -21,8 +37,11 @@ const Footer = (): JSX.Element => {
         </section>
         <section className='store-footer-container--links'>
           <div className='store-footer-container--links-container'>
-            <ul className='store-footer-container--links__list'>
-              <li className='store-footer-container--links__list-item title'>
+            <ul className={`store-footer-container--links__list ${isOpenInfos ? "opened" : ""}`}>
+              <li 
+                className='store-footer-container--links__list-item title'
+                onClick={() => handleOpenInfos()}  
+              >
                 Informações
               </li>
               <li className='store-footer-container--links__list-item'>
@@ -39,8 +58,11 @@ const Footer = (): JSX.Element => {
               </li>
             </ul>
 
-            <ul className='store-footer-container--links__list'>
-              <li className='store-footer-container--links__list-item title'>
+            <ul className={`store-footer-container--links__list ${isOpenMyAccount ? "opened" : ""}`}>
+              <li 
+                className='store-footer-container--links__list-item title'
+                onClick={() => handleOpenMyAccount()}
+              >
                 Minha Conta
               </li>
               <li className='store-footer-container--links__list-item'>
@@ -54,8 +76,11 @@ const Footer = (): JSX.Element => {
               </li>
             </ul>
 
-            <ul className='store-footer-container--links__list'>
-              <li className='store-footer-container--links__list-item title'>
+            <ul className={`store-footer-container--links__list ${isOpenStore ? "opened" : ""}`}>
+              <li 
+                className='store-footer-container--links__list-item title'
+                onClick={() => handleOpenStore()}  
+              >
                 Onde nos Encontrar
               </li>
               <li className='store-footer-container--links__list-item'>

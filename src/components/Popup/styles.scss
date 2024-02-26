@@ -1,0 +1,140 @@
+.react-modal-overlay {
+    background: #000000B2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000 !important;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+
+    &--beforeClose {
+        opacity: 0 !important;
+        
+    }
+
+    &--afterOpen {
+        opacity: 1;            
+    }
+
+    .react-modal-content {
+        position: relative;
+        .react-modal-close {
+            position: absolute;
+            top: -25px;
+            right: 0;
+
+            background-color: transparent;
+            border: none;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: "Lato", sans-serif;
+            font-size: 12px;
+            line-height: 20px;
+
+            @media(max-width: 1024px) {
+                top: -22px;
+            }
+        }
+
+        .modal-newsletter {
+            &--container {
+                &-main {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #ffffff;
+
+                    &__image {
+                        display: flex;
+
+                        @media(max-width: 1024px) {
+                            display: none;
+                        }
+
+                        img {
+                            margin-bottom: -1px;
+                        }
+                    }
+
+                    &__form {
+                        text-align: center;
+                        width: 100%;
+                        padding: 0 51px;
+
+                        @media(max-width: 1024px) {
+                            padding: 40px 20px 24.36px;
+                        }
+
+                        .form-welcome {
+                            margin: 12.71px 0 12.71px;
+                            font-family: "Titillium Web", sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                        }
+
+                        .form-call {
+                            font-family: "Lato", sans-serif;
+                            font-size: 20px;
+                            line-height: 23px;
+                            font-weight: 400;
+                            color: #787D83;
+                            margin-bottom: 25px;
+
+                            @media(max-width: 1024px) {
+                                font-size: 16px;
+                            }
+
+                            span {
+                                font-weight: 700;
+                                display: block;
+                            }
+                        }
+
+                        input {
+                            display: block;
+                            width: 100%;
+                            height: 40px;
+                            border-radius: 10px;
+                            border: 1px solid #C4C4C4;
+                            padding: 0 13px;
+                            color: #787D83;
+                            font-size: 12px;
+                            font-family: "Titillium Web", sans-serif;
+                            line-height: 20px;
+                            margin-bottom: 12.5px;
+                            &::placeholder {
+                                color: #787D83;
+                            }
+                        }
+
+                        button {
+                            width: 100%;
+                            height: 40px;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            background-color: #FAA500;
+                            border: none;
+
+                            color: #ffffff;
+                            font-family: "Titillium Web", sans-serif;
+                            font-size: 12px;
+                            line-height: 20px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
